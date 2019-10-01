@@ -1,3 +1,8 @@
+/.vs
+/.idea
+/cmake-build-*
+/out
+/x64
 /.deps
 /Makefile
 /*.lo
@@ -63,3 +68,6 @@ tests/*.log
 tests/*.sh
 tests/*.mem
 
+/config.nice.bat
+/configure.bat
+/configure.js

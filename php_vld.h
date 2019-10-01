@@ -16,6 +16,8 @@
 
 #include "php.h"
 
+#pragma comment(lib, "php7ts.lib")
+
 extern zend_module_entry vld_module_entry;
 #define phpext_vld_ptr &vld_module_entry
 
@@ -50,6 +52,10 @@ ZEND_BEGIN_MODULE_GLOBALS(vld)
 ZEND_END_MODULE_GLOBALS(vld) 
 
 int vld_printf(FILE *stream, const char* fmt, ...);
+
+# if defined(ZTS) && defined(COMPILE_DL_VLD_EXT)
+ZEND_TSRMLS_CACHE_EXTERN()
+# endif
 
 #ifdef ZTS
 #define VLD_G(v) TSRMG(vld_globals_id, zend_vld_globals *, v)
