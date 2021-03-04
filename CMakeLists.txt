@@ -11,7 +11,10 @@ include_directories(
         "$ENV{PHP_DEVEL}/include/win32"
         "$ENV{PHP_DEVEL}/include/Zend"
 )
-link_directories("$ENV{PHP_PATH}/dev")
+
+link_directories(
+        "$ENV{PHP_PATH}/dev"
+)
 
 add_compile_definitions(
         _WINDOWS
@@ -23,9 +26,8 @@ add_compile_definitions(
         _USE_MATH_DEFINES
         # ZEND_WIN32_FORCE_INLINE
         ZTS=1
-        ZEND_DEBUG=0
+        ZEND_DEBUG=1
         COMPILE_DL_VLD_EXT
-        ZEND_ENABLE_STATIC_TSRMLS_CACHE=0
 )
 
 file(GLOB SRC_FOLDER "./*.c" "./*.h")

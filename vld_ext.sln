@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vld_ext", "vld_ext.vcxproj", "{E0C93D40-7E5D-4848-BA43-CA612ED4059B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		DebugScript|x64 = DebugScript|x64
+		Release|x64 = Release|x64
+		ReleaseWithoutOpt|x64 = ReleaseWithoutOpt|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.Debug|x64.ActiveCfg = Debug|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.Debug|x64.Build.0 = Debug|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.DebugScript|x64.ActiveCfg = DebugScript|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.DebugScript|x64.Build.0 = DebugScript|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.Release|x64.ActiveCfg = Release|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.Release|x64.Build.0 = Release|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.ReleaseWithoutOpt|x64.ActiveCfg = ReleaseWithoutOpt|x64
+		{E0C93D40-7E5D-4848-BA43-CA612ED4059B}.ReleaseWithoutOpt|x64.Build.0 = ReleaseWithoutOpt|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70664C5A-6CCE-4279-8085-D7A18B8981C0}
+	EndGlobalSection
+EndGlobal

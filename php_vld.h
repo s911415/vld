@@ -16,7 +16,11 @@
 
 #include "php.h"
 
+#if ZEND_DEBUG
+#pragma comment(lib, "php7ts_debug.lib")
+#else
 #pragma comment(lib, "php7ts.lib")
+#endif
 
 extern zend_module_entry vld_module_entry;
 #define phpext_vld_ptr &vld_module_entry

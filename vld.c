@@ -10,7 +10,7 @@
    +----------------------------------------------------------------------+
  */
 /* $Id: vld.c,v 1.40 2009-03-30 18:36:55 derick Exp $ */
-
+#define _CRT_SECURE_NO_WARNINGS
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -306,8 +306,11 @@ static zend_op_array *vld_compile_file(zend_file_handle *file_handle, int type T
 		vld_dump_oparray (op_array TSRMLS_CC);
 	}
 
-	zend_hash_apply_with_arguments (CG(function_table) TSRMLS_CC, (apply_func_args_t) VLD_WRAP_PHP7(vld_dump_fe), 0);
-	zend_hash_apply (CG(class_table), (apply_func_t) VLD_WRAP_PHP7(vld_dump_cle) TSRMLS_CC);
+	HashTable* ft = CG(function_table);
+	HashTable* ct = CG(class_table);
+
+	zend_hash_apply_with_arguments (ft TSRMLS_CC, (apply_func_args_t) VLD_WRAP_PHP7(vld_dump_fe), 0);
+	zend_hash_apply (ct, (apply_func_t) VLD_WRAP_PHP7(vld_dump_cle) TSRMLS_CC);
 
 	if (VLD_G(path_dump_file)) {
 		fprintf(VLD_G(path_dump_file), "}\n");
@@ -343,3 +346,10 @@ static void vld_execute_ex(zend_execute_data *execute_data TSRMLS_DC)
 	// nothing to do
 }
 /* }}} */
+
+#ifdef COMPILE_DL_VLD_EXT
+# ifdef ZTS
+ZEND_TSRMLS_CACHE_DEFINE()
+# endif
+ZEND_GET_MODULE(vld)
+#endif
