@@ -216,7 +216,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;VLDEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;COMPILE_DL_VLD_EXT;VLD_EXT_EXPORTS=1;ZEND_DEBUG=1;ZEND_ENABLE_STATIC_TSRMLS_CACHE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;VLDEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;COMPILE_DL_VLD_EXT;VLD_EXT_EXPORTS=1;ZEND_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -302,7 +302,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;SENSEEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;ZEND_DEBUG=0;COMPILE_DL_SENSE_EXT;SENSE_EXT_EXPORTS=1;ZEND_ENABLE_STATIC_TSRMLS_CACHE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;SENSEEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;ZEND_DEBUG=0;COMPILE_DL_SENSE_EXT;SENSE_EXT_EXPORTS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -328,7 +328,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;VLDEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;ZEND_DEBUG=0;COMPILE_DL_VLD_EXT;VLD_EXT_EXPORTS=1;ZEND_ENABLE_STATIC_TSRMLS_CACHE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;VLDEXT_EXPORTS;_WINDOWS;_USRDLL;WINDOWS=1;ZEND_WIN32=1;PHP_WIN32=1;WIN32;_MBCS;_USE_MATH_DEFINES;ZTS=1;ZEND_DEBUG=0;COMPILE_DL_VLD_EXT;VLD_EXT_EXPORTS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
